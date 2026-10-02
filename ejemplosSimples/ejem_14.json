@@ -1,0 +1,13 @@
+{
+    "nombre" : "Juan",
+    "edad" : 50,
+    "casado" : false,
+    "altura" : 1.9,
+    "nombre_hijos" : ["Juanito", "Luisito", "Evita"],
+    "direccion" : {
+        "ciudad" : "Vigo",
+        "cp" : 34555
+    },
+    "pelicula" : null
+
+}
