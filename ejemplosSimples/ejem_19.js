@@ -43,3 +43,20 @@ console.log(actividadesHTML)
 const nums = [2, 5, 1, 2]
 const suma = nums.reduce((num1, num2) => num1 + num2, 0)
 console.log(suma)
+
+//ForEach
+const usuarios = ["Antonio", "Pepe", "Daniel"]
+usuarios.forEach(guardarBD)
+
+const guardarBD= (usuario)=>{
+    //guardo en BD
+    //insert into xxx values()
+    console.log("Se guardo el usuario "+usuario+" en la base de datos")
+}
+
+//find -> encuentra la primera ocurrencia
+const numeros3= [3, 4, 5, 1]
+const encontrado=numeros3.find(num=>num>2)
+console.log(encontrado)
+
+//some
