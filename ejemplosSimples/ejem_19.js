@@ -46,17 +46,29 @@ console.log(suma)
 
 //ForEach
 const usuarios = ["Antonio", "Pepe", "Daniel"]
-usuarios.forEach(guardarBD)
+//usuarios.forEach(guardarBD)
 
-const guardarBD= (usuario)=>{
-    //guardo en BD
-    //insert into xxx values()
-    console.log("Se guardo el usuario "+usuario+" en la base de datos")
-}
+//const guardarBD = (usuario) => {
+//guardo en BD
+//insert into xxx values()
+//  console.log("Se guardo el usuario " + usuario + " en la base de datos")
+//}
 
 //find -> encuentra la primera ocurrencia
-const numeros3= [3, 4, 5, 1]
-const encontrado=numeros3.find(num=>num>2)
+const numeros3 = [3, 4, 5, 1]
+const encontrado = numeros3.find(num => num > 2)
 console.log(encontrado)
 
-//some
+//some(si alguno de los elementos cumple con la condicion) y every (todos los elementos cumplen la condicion)
+
+const notas = [2, 5, 8, 9]
+const aprobado = notas.some(nota => nota >= 5)
+console.log(aprobado)
+
+const aprobadasTodas = notas.every(nota => nota >= 5)
+console.log(aprobadasTodas)
+
+//sort
+const puntos = [4, 8, 5, 6, 3, 9]
+puntos.sort((a, b) => a - b)
+console.log(puntos)
