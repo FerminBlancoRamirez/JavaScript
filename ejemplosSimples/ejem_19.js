@@ -72,3 +72,34 @@ console.log(aprobadasTodas)
 const puntos = [4, 8, 5, 6, 3, 9]
 puntos.sort((a, b) => a - b)
 console.log(puntos)
+
+//flat, concat
+
+//slice
+const valores_alumnos = [6, 4, 3, 2, 1]
+const subconjunto = valores_alumnos.slice(1, 3 + 1)
+console.log(subconjunto)
+
+//splice
+const valores_profesores = [5, 6, 8, 2, 3]
+const subconjuntoProfesores = valores_profesores.splice(1, 2, "a", "b")
+console.log(subconjuntoProfesores)
+
+//indexof
+const nombres_alumnos = ["Ana", "Juana", "Laura", "Rosario"]
+const index = nombres_alumnos.indexOf("Laura")
+console.log(index)
+
+//key, values, entries
+const notas_globales = ["suspenso", "aprobado", "suspenso"]
+for(let key of notas_globales.keys()){
+    console.log(key)
+}
+
+for(let key of notas_globales.values()){
+    console.log(valor)
+}
+
+for(let key of notas_globales.entries()){
+    console.log(key+" "+valor)
+}
